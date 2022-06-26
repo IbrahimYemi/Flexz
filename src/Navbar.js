@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function () {
   const [bar, setBar] = useState(false);
@@ -28,11 +27,10 @@ export default function () {
           <li>Flexz-app</li>
         </Link>
       </nav>
-      <FontAwesomeIcon
-        icon='fa-duotone fa-bars'
+      <i
         className={!bar ? 'fa fa-bars' : 'fa fa-times'}
         onClick={handleClick}
-      />
+      ></i>
     </div>
   );
 }

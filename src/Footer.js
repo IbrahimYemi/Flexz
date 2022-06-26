@@ -31,7 +31,10 @@ export default function Footer() {
         <a href="https://instagram.com/sharafa224" target="blank">
           {Instagram}
         </a>
-        <a href="https://linedin.com/ibrahim-sharafadeen" target="blank">
+        <a
+          href="https://www.linkedin.com/in/ibrahim-sarafadeen-8a11691a7?original_referer="
+          target="blank"
+        >
           {Linkedin}
         </a>
       </div>
