@@ -26,12 +26,19 @@ export default function App() {
       <div>
         <Navbar />
         <Header />
-        {/* <Routes>
-          <Route exact path="/" element={<Header />} />
+        <Routes>
+          <Route
+            exact
+            path="/github"
+            element={() => {
+              window.location.replace('https://github.com/IbrahimYemi');
+              return null;
+            }}
+          />
           <Route exact path="/about" element={<About />} />
           <Route path="/developer" element={<Developer />} />
           <Route path="/flexzapp" element={<Flexzapp />} />
-        </Routes> */}
+        </Routes>
         <Footer />
       </div>
     </Router>
