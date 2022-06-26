@@ -57,6 +57,7 @@ body {
   height: 80vh;
   position: relative;
   margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .header img {

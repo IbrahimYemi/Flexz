@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-brands-svg-icons';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function Developer() {
-  const Messsage = <FontAwesomeIcon className="highlight" icon={faEnvelope} />;
+  const Messsage = <i className="fa fa-envelope"></i> ;
 
   return (
     <div className="developer">
@@ -31,7 +31,7 @@ export default function Developer() {
           href="mailto:ibrahimsharafadeen95@gmail.com?Subject=HELLO YEMI,"
           target="blank"
         >
-          {Messsage}Hire Me
+          {Messsage} Hire Me
         </a>
       </div>
     </div>
