@@ -4,14 +4,16 @@ import {
   faTwitter,
   faGithub,
   faInstagram,
-  falinkedin,
-} from '@fortawesome/free-solid-svg-icons';
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
-  const Twitter = <FontAwesomeIcon icon={faTwitter} />;
-  const Github = <FontAwesomeIcon icon={faGithub} />;
-  const Instagram = <FontAwesomeIcon icon={fInstagram} />;
-  const Linkedin = <FontAwesomeIcon icon={faLinkedin} />;
+  const Twitter = <FontAwesomeIcon className="highlight" icon={faTwitter} />;
+  const Github = <FontAwesomeIcon className="highlight" icon={faGithub} />;
+  const Instagram = (
+    <FontAwesomeIcon className="highlight" icon={faInstagram} />
+  );
+  const Linkedin = <FontAwesomeIcon className="highlight" icon={faLinkedin} />;
   return (
     <div className="footer">
       <div className="social">

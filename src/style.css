@@ -239,16 +239,17 @@ img.picture {
   margin: 25px 0p;
 }
 
-.social i {
+.social .highlight {
   font-size: 25px;
   padding: 5px;
   border-radius: 10%;
   margin: 10px;
+  color: #ffffff;
 }
 
-.social i:hover {
-  color: var(--primary);
-  background: #ffffff;
+.social .highlight:hover {
+  color: #ffffff;
+  transform: scale(1.2);
 }
 
 .hr {
