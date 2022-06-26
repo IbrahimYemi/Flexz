@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@types/react": ">=16.14.8",
-    "react": "^18.1.0",
+    "awesome": "^0.0.7",
+    "core": "^2.0.14",
+    "font": "^0.0.4",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "6"
