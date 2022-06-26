@@ -6,6 +6,11 @@ import {
   faInstagram,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  solid,
+  regular,
+  brands,
+} from '@fortawesome/fontawesome-svg-core/import.macro';
 
 export default function Footer() {
   const Twitter = <FontAwesomeIcon className="highlight" icon={faTwitter} />;
@@ -17,11 +22,18 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="social">
-        <a href="https://github.com/IbrahimYemi">{Github}</a>
-        {Twitter}
-        {Github}
-        {Instagram}
-        {Linkedin}
+        <a href="https://github.com/IbrahimYemi" target="blank">
+          {Github}
+        </a>
+        <a href="https://twitter.com/sharafa224" target="blank">
+          {Twitter}
+        </a>
+        <a href="https://instagram.com/sharafa224" target="blank">
+          {Instagram}
+        </a>
+        <a href="https://linedin.com/ibrahim-sharafadeen" target="blank">
+          {Linkedin}
+        </a>
       </div>
       <div className="hr"></div>
       <div className="copyright">&copy; of Ibrahim Yemi 2022</div>

@@ -154,9 +154,14 @@ img.picture {
 }
 
 .hire-me {
+  display: flex;
+  text-decoration: none;
+}
+
+.hire-me-text {
   background: var(--secondary);
   padding: 10px 20px;
-  margin: 5% 40%;
+  margin: auto;
   font-weight: 900;
   text-align: center;
   letter-spacing: 1px;

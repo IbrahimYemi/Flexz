@@ -1,14 +1,12 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-brands-svg-icons';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function Developer() {
-  const Mailto = ({ email, subject = '', body = '', children }) => {
-    let params = subject || body ? '?' : '';
-    if (subject) params += `subject=${encodeURIComponent(subject)}`;
-    if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
+  const Messsage = <FontAwesomeIcon className="highlight" icon={faEnvelope} />;
 
-    return <a href={`mailto:${email}${params}`}>{children}</a>;
-  };
   return (
     <div className="developer">
       <h2>DEVELOPER</h2>
@@ -27,13 +25,15 @@ export default function Developer() {
           companies
         </div>
       </div>
-      <Mailto
-        email="ibrahimsharafadeen95@gmail.com"
-        subject="Hello & Welcome"
-        body="Hello Yemi!"
-      >
-        <div className="hire-me">Hire Me</div>
-      </Mailto>
+      <div className="hire-me">
+        <a
+          className="hire-me-text"
+          href="mailto:ibrahimsharafadeen95@gmail.com?Subject=HELLO YEMI,"
+          target="blank"
+        >
+          {Messsage}Hire Me
+        </a>
+      </div>
     </div>
   );
 }
