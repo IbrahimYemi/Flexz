@@ -6,6 +6,7 @@ import {
   faInstagram,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const Twitter = <FontAwesomeIcon className="highlight" icon={faTwitter} />;
@@ -17,6 +18,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="social">
+        <Link to="github.com/IbrahimYemi">{Github}</Link>
         {Twitter}
         {Github}
         {Instagram}

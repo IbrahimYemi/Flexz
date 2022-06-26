@@ -249,7 +249,7 @@ img.picture {
 
 .social .highlight:hover {
   color: #ffffff;
-  transform: scale(1.2);
+  transform: translateY(-4px);
 }
 
 .hr {
