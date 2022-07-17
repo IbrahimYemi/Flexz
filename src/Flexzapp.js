@@ -38,7 +38,7 @@ export default function Flexzapp() {
             never dies.” – Edward Bulwer-Lytton
           </div>
         </div>
-        <a href="" onClick={handleAvailable} className="linking">
+        <a onClick={handleAvailable} className="linking">
           Flexz-music
         </a>
       </div>
