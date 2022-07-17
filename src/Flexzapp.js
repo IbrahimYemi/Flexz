@@ -1,6 +1,9 @@
 import React from 'react';
 
 export default function Flexzapp() {
+  const handleAvailable = () => {
+    alert('This will be available soon!');
+  };
   return (
     <div className="app">
       <div className="flexz-app">
@@ -16,7 +19,11 @@ export default function Flexzapp() {
             yourself from the clues.” - unknown
           </div>
         </div>
-        <a href="" className="linking">
+        <a
+          href="https://flexz-movies.stackblitz.io"
+          className="linking"
+          target="blank"
+        >
           Flexz-movies
         </a>
       </div>
@@ -31,7 +38,7 @@ export default function Flexzapp() {
             never dies.” – Edward Bulwer-Lytton
           </div>
         </div>
-        <a href="" className="linking">
+        <a href="" onClick={handleAvailable} className="linking">
           Flexz-music
         </a>
       </div>
